@@ -1,16 +1,16 @@
 <template>
   <ul>
-    <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+    <ListadoItemCompositionComponent v-for="item in items" :key="item.id" :item="item" />
   </ul>
 </template>
 
-<script>
-export default {
-  props: {
-    items: {
-      type: Array,
-      required: true,
-    },
+<script setup>
+import ListadoItemCompositionComponent from './ListadoItemCompositionComponent.vue';
+
+defineProps({
+  items: {
+    type: Array,
+    required: true,
   },
-};
+});
 </script>

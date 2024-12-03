@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import ListadoCompositionComponent from '../src/components/ListadoCompositionComponent.vue'; // Reemplaza con la ruta de tu componente
+import ListadoCompositionComponent from '../src/components/ListadoCompositionComponent.vue';
 
 describe('ItemList', () => {
     it('should render a list of items based on the prop', () => {
@@ -12,7 +12,7 @@ describe('ItemList', () => {
         });
 
         const listItems = wrapper.findAll('li');
-        expect(listItems.length).toBe(2);
+        expect(listItems.length).toBe(items.length);
         expect(listItems[0].text()).toBe('Item 1');
         expect(listItems[1].text()).toBe('Item 2');
     });

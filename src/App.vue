@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import YupValidationCompositionComponent from "./components/YupValidationCompositionComponent.vue";
-import CondicionalCompositionComponent from "./components/CondicionalCompositionComponent.vue";
+import LlamaListadoCompositionComponent from "./components/LlamaListadoCompositionComponent.vue";
 </script>
 
 <template>
-  <YupValidationCompositionComponent/>
+  <LlamaListadoCompositionComponent/>
 </template>
 
 <style scoped>
