@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import EventosCompositionComponent from "./components/EventosCompositionComponent.vue";
+import YupValidationCompositionComponent from "./components/YupValidationCompositionComponent.vue";
+import CondicionalCompositionComponent from "./components/CondicionalCompositionComponent.vue";
 </script>
 
 <template>
-  <EventosCompositionComponent/>
+  <YupValidationCompositionComponent/>
 </template>
 
 <style scoped>
