@@ -1,11 +1,16 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import MiComponente from './components/MiComponente.vue'
+import EstadoComponent from "./components/EstadoCompositionComponent.vue";
+import SimpleOptionsComponent from "./components/SimpleOptionsComponent.vue";
+import SimpleCompositionComponent from "./components/SimpleCompositionComponent.vue";
+import PropsCompositionComponent from "./components/PropsCompositionComponent.vue";
 </script>
 
 <template>
-  <MiComponente></MiComponente>
-  <HelloWorld msg="Vite + Vue" />
+  <SimpleOptionsComponent/>
+  <SimpleCompositionComponent/>
+  <PropsCompositionComponent title="hola" numero="2"/>
 </template>
 
 <style scoped>

@@ -6,7 +6,7 @@
 <script>
 export default {
   // Definimos el nombre del componente
-  name: 'ComponenteSimpleOptions',
+  name: 'SimpleOptionsComponent',
 
   // Aquí declaramos las variables reactivas del componente
   data() {

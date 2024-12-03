@@ -1,6 +1,10 @@
 <template>
   <!-- Mostramos el mensaje en la plantilla -->
-  <p>{{ mensaje }}</p>
+  <div>
+    <p>Composition API Component</p>
+    <p id="mensaje">{{ mensaje }}</p>
+    <h4 class="card">Titulo</h4>
+  </div>
 </template>
 
 <script>
@@ -8,7 +12,7 @@ import { ref } from 'vue'; // Importamos 'ref' para declarar variables reactivas
 
 export default {
   // Definimos el nombre del componente
-  name: 'ComponenteSimpleComposition',
+  name: 'SimpleCompositionComponent',
 
   // El método 'setup' es el corazón de la Composition API
   setup() {
