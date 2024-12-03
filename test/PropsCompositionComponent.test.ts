@@ -11,7 +11,9 @@ describe('MiComponente', () => {
                 numero: 2
             },
         });
-        console.log("find(p): "+ JSON.stringify(wrapper.props()))
+        // console.log("find(p): "+ JSON.stringify(wrapper.props()))
+        expect(wrapper.props().title).toBe('Hello, Vitest!')
+        expect(wrapper.props().numero).toBe(2)
         expect(wrapper.find('h3').text()).toBe('El número es: 2');
     });
 

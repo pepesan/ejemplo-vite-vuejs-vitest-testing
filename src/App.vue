@@ -5,12 +5,11 @@ import EstadoComponent from "./components/EstadoCompositionComponent.vue";
 import SimpleOptionsComponent from "./components/SimpleOptionsComponent.vue";
 import SimpleCompositionComponent from "./components/SimpleCompositionComponent.vue";
 import PropsCompositionComponent from "./components/PropsCompositionComponent.vue";
+import ModelCompositionComponent from "./components/ModelCompositionComponent.vue";
 </script>
 
 <template>
-  <SimpleOptionsComponent/>
-  <SimpleCompositionComponent/>
-  <PropsCompositionComponent title="hola" numero="2"/>
+  <ModelCompositionComponent></ModelCompositionComponent>
 </template>
 
 <style scoped>

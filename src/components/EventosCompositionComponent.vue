@@ -2,8 +2,8 @@
   <div>
     <h1>{{ message }}</h1>
     <p>Contador: {{ count }}</p>
-    <button @click="increment">Incrementar</button>
-    <button @click="decrement">Decrementar</button>
+    <button id="inc" @click="increment">Incrementar</button>
+    <button id="dec" @click="decrement">Decrementar</button>
   </div>
 </template>
 
