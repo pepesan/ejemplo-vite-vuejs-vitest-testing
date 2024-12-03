@@ -5,7 +5,6 @@ import MiComponente from './components/MiComponente.vue'
 
 <template>
   <MiComponente></MiComponente>
-  <MiComponente message="Holiwi"></MiComponente>
   <HelloWorld msg="Vite + Vue" />
 </template>
 

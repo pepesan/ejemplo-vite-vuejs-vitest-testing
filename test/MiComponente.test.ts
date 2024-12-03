@@ -1,8 +1,9 @@
 import { mount } from '@vue/test-utils';
 import MiComponente from '../src/components/MiComponente.vue';
+import {describe, test, expect} from "vitest";
 
 describe('MiComponente', () => {
-    it('renders the correct message', () => {
+    test('renders the correct message', () => {
         const wrapper = mount(MiComponente, {
             props: {
                 message: 'Hello, Vitest!',

@@ -7,15 +7,9 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "MiComponente",
-  props: {
-    message: {
-      type: String,
-      default: "World",
-    },
-  },
-  setup(props) {
+  setup() {
     return {
-      msg: props.message,
+      msg: "Mensaje",
     };
   },
 });
