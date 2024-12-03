@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>{{ message }}</h1>
-    <p>Contador: {{ count }}</p>
+    <p id="contador">Contador: {{ count }}</p>
     <button id="inc" @click="increment">Incrementar</button>
     <button id="dec" @click="decrement">Decrementar</button>
   </div>
@@ -14,7 +13,6 @@ export default {
   setup() {
     // Variables de estado
     const count = ref(0);
-    const message = ref('¡Hola, Vue 3!');
 
     // Métodos para modificar el estado
     const increment = () => {
@@ -28,7 +26,6 @@ export default {
     // Devuelve el estado y los métodos al template
     return {
       count,
-      message,
       increment,
       decrement,
     };

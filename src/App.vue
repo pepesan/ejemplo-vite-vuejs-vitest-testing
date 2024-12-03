@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import PartidosAxiosComponent from "./components/PartidosAxiosComponent.vue";
+import EventosCompositionComponent from "./components/EventosCompositionComponent.vue";
 </script>
 
 <template>
-  <PartidosAxiosComponent/>
+  <EventosCompositionComponent/>
 </template>
 
 <style scoped>
