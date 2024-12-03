@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import PropsCompositionComponent from "./components/PropsCompositionComponent.vue";
+import PartidosAxiosComponent from "./components/PartidosAxiosComponent.vue";
 </script>
 
 <template>
-  <PropsCompositionComponent title="titulo" numero="2"></PropsCompositionComponent>
+  <PartidosAxiosComponent/>
 </template>
 
 <style scoped>
