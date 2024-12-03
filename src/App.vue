@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import PropEstadoCompositionComponent from "./components/PropEstadoCompositionComponent.vue";
+import EventosCompositionComponent from "./components/EventosCompositionComponent.vue";
 </script>
 
 <template>
-  <PropEstadoCompositionComponent title="hola" numero="2"/>
+  <EventosCompositionComponent/>
 </template>
 
 <style scoped>

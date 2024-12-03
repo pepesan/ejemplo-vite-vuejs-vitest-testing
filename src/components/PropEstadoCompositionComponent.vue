@@ -20,6 +20,7 @@ const props = defineProps({
     default: 0,
   },
 });
+// Estado inicial del valor quantity es 0
 const quantity = ref(0);
 
 const incrementQuantity = () => {
