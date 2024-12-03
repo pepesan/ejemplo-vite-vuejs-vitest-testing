@@ -1,15 +1,9 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import MiComponente from './components/MiComponente.vue'
-import EstadoComponent from "./components/EstadoCompositionComponent.vue";
-import SimpleOptionsComponent from "./components/SimpleOptionsComponent.vue";
-import SimpleCompositionComponent from "./components/SimpleCompositionComponent.vue";
 import PropsCompositionComponent from "./components/PropsCompositionComponent.vue";
-import ModelCompositionComponent from "./components/ModelCompositionComponent.vue";
 </script>
 
 <template>
-  <ModelCompositionComponent></ModelCompositionComponent>
+  <PropsCompositionComponent title="titulo" numero="2"></PropsCompositionComponent>
 </template>
 
 <style scoped>
