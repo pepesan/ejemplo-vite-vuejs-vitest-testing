@@ -5,7 +5,7 @@
 
       <!-- Campo de usuario -->
       <div class="form-group">
-        <label for="username">Usuario</label>
+        <label id="username-label" for="username">Usuario</label>
         <input
             type="text"
             id="username"
@@ -20,7 +20,7 @@
 
       <!-- Campo de contraseña -->
       <div class="form-group">
-        <label for="password">Contraseña</label>
+        <label id="password-label" for="password">Contraseña</label>
         <input
             type="password"
             id="password"
