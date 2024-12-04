@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsoDirectivaCustomComponent from "./components/UsaDirectivaCustomComponent.vue";
+import UsaMouseComposableComponent from "./components/UsaMouseComposableComponent.vue";
 </script>
 
 <template>
-  <UsoDirectivaCustomComponent/>
+  <UsaMouseComposableComponent/>
 </template>
 
 <style scoped>
