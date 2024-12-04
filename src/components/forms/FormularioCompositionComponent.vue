@@ -4,7 +4,7 @@
     <input type="password" v-model="password" placeholder="Contraseña" />
     <button type="submit">Iniciar sesión</button>
     <p id="form-error" v-if="error">{{ error }}</p>
-    <p id="form-error" v-else>Success: {{message}}</p>
+    <p id="form-message" v-if="!error">Success: {{message}}</p>
   </form>
 </template>
 
