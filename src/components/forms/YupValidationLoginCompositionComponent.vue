@@ -53,7 +53,7 @@ const schema = yup.object({
   password: yup
       .string()
       .required('El campo es obligatorio')
-      .min(6, 'La contraseña debe tener al menos 6 caracteres'),
+      .min(12, 'La contraseña debe tener al menos 12 caracteres'),
 });
 
 // Definición del valor inicial de los campos

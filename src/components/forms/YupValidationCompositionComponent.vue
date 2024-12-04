@@ -34,7 +34,7 @@ const handleSubmit = async () => {
   try {
     await schema.validate(form, { abortEarly: false });
     // Si la validación pasa, puedes enviar el formulario
-    console.log('Formulario enviado:', form);
+    // console.log('Formulario enviado:', form);
     mensaje.value = JSON.stringify(form);
   } catch (err) {
     // toma todos los errores que encontró el formulario
@@ -45,7 +45,7 @@ const handleSubmit = async () => {
       prev[curr.path].push(curr.message);
       return prev;
     }, {});
-    console.log(errors.value);
+    // console.log(errors.value);
   }
 };
 </script>

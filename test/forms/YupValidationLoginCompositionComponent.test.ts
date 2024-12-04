@@ -47,7 +47,7 @@ describe('YupValidationLoginCompositionComponent.vue', () => {
             'El usuario debe tener al menos 3 caracteres'
         );
         expect(wrapper.findAll('.invalid-feedback').at(1).text()).toBe(
-            'La contraseña debe tener al menos 6 caracteres'
+            'La contraseña debe tener al menos 12 caracteres'
         );
     });
 
