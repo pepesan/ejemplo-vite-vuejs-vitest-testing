@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import UsaSlotCompositionComponent from "./components/UsaSlotCompositionComponent.vue";
+import UsoDirectivaCustomComponent from "./components/UsaDirectivaCustomComponent.vue";
 </script>
 
 <template>
-  <UsaSlotCompositionComponent/>
+  <UsoDirectivaCustomComponent/>
 </template>
 
 <style scoped>
