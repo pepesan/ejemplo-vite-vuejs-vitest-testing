@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import LlamaListadoCompositionComponent from "./components/LlamaListadoCompositionComponent.vue";
-import UsaSlotCompositionComponent from "./components/UsaSlotCompositionComponent.vue";
+import ModelCompositionComponent from "./components/ModelCompositionComponent.vue";
 </script>
 
 <template>
-  <UsaSlotCompositionComponent/>
+  <ModelCompositionComponent/>
 </template>
 
 <style scoped>
