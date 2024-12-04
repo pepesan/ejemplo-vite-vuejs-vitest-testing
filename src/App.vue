@@ -1,9 +1,10 @@
 <script setup lang="ts">
 import FormularioCompositionComponent from "./components/forms/FormularioCompositionComponent.vue";
+import YupValidationCompositionComponent from "./components/forms/YupValidationCompositionComponent.vue";
 </script>
 
 <template>
-  <FormularioCompositionComponent/>
+  <YupValidationCompositionComponent/>
 </template>
 
 <style scoped>

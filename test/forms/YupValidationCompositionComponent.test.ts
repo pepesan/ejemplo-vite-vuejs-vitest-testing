@@ -1,7 +1,5 @@
 import { describe, it, expect} from 'vitest';
 import { mount } from '@vue/test-utils';
-import { ref, reactive } from 'vue';
-import * as yup from 'yup';
 import YupValidationCompositionComponent from '../../src/components/forms/YupValidationCompositionComponent.vue';
 
 describe('LoginForm', () => {
