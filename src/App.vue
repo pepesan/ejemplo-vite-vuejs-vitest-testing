@@ -1,9 +1,12 @@
 <script setup lang="ts">
-import UsaMouseComposableComponent from "./components/UsaMouseComposableComponent.vue";
+import UsaMethodComponent from "./components/UsaMethodComponent.vue";
+import UsaComputadaComponent from "./components/UsaComputadaComponent.vue";
+import UsaReactiveCompositionComponent from "./components/UsaReactiveCompositionComponent.vue";
+import UsaComputedFormatComponent from "./components/UsaComputedFormatComponent.vue";
 </script>
 
 <template>
-  <UsaMouseComposableComponent/>
+  <UsaComputedFormatComponent/>
 </template>
 
 <style scoped>
