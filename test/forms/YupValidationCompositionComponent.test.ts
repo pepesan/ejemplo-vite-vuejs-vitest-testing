@@ -1,9 +1,9 @@
 import {describe, test, expect, beforeEach, afterEach} from 'vitest';
-import { mount } from '@vue/test-utils';
+import {mount, VueWrapper} from '@vue/test-utils';
 import YupValidationCompositionComponent from '../../src/components/forms/YupValidationCompositionComponent.vue';
 
 describe('LoginForm', () => {
-    let wrapper;
+    let wrapper: VueWrapper<any>;
     beforeEach(() => {
         wrapper = mount(YupValidationCompositionComponent);
     });

@@ -4,7 +4,7 @@ import { describe, test, expect, beforeEach, afterEach, vi, af} from 'vitest';
 import YupValidationLoginCompositionComponent from '../../src/components/forms/YupValidationLoginCompositionComponent.vue';
 
 describe('YupValidationLoginCompositionComponent.vue', () => {
-    let wrapper;
+    let wrapper: VueWrapper<any>;
 
     beforeEach(() => {
         wrapper = mount(YupValidationLoginCompositionComponent);
