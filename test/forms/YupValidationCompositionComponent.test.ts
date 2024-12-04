@@ -10,7 +10,7 @@ describe('LoginForm', () => {
         // Simular envío del formulario sin completar los campos
         await form.trigger('submit');
 
-        expect(wrapper.find('.invalid-feedback').text()).toContain('El nombre debe tener al menos 3 caracteres');
+        expect(wrapper.find('.invalid-feedback').text()).toContain('El campo es obligatorio');
     });
 
     it('should submit the form successfully with valid data', async () => {
