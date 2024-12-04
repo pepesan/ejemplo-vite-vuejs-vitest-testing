@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import ModelCompositionComponent from "./components/ModelCompositionComponent.vue";
+import UsaSlotCompositionComponent from "./components/UsaSlotCompositionComponent.vue";
 </script>
 
 <template>
-  <ModelCompositionComponent/>
+  <UsaSlotCompositionComponent/>
 </template>
 
 <style scoped>

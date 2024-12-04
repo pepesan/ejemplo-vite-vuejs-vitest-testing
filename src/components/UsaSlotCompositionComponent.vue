@@ -2,7 +2,7 @@
   <div>
     <h2>Usa Slot</h2>
     <SlotCompositionComponent>
-      <h2>contenido de slot</h2>
+      <h3>contenido de slot</h3>
     </SlotCompositionComponent>
   </div>
 </template>
