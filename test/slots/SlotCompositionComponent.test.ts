@@ -1,5 +1,5 @@
 import {mount} from '@vue/test-utils';
-import SlotCompositionComponent from '../src/components/SlotCompositionComponent.vue';
+import SlotCompositionComponent from '../../src/components/slots/SlotCompositionComponent.vue';
 
 describe('ComponenteSlot', () => {
     it('debe renderizar el título correctamente', () => {

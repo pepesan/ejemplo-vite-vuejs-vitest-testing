@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import EventosCompositionComponent from '../src/components/EventosCompositionComponent.vue';
+import EventosCompositionComponent from '../../src/components/eventos/EventosCompositionComponent.vue';
 import {describe, test, expect} from "vitest";
 
 describe('EventosCompositionComponent', () => {

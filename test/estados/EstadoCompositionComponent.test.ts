@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import EstadoCompositionComponent from '../src/components/EstadoCompositionComponent.vue';
+import EstadoCompositionComponent from '../../src/components/estados/EstadoCompositionComponent.vue';
 import {describe, test, expect} from "vitest";
 
 describe('MyComponent', () => {

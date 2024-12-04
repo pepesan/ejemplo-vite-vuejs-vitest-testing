@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import CondicionalCompositionComponent from '../src/components/CondicionalCompositionComponent.vue'; // Reemplaza con la ruta de tu componente
+import CondicionalCompositionComponent from '../../src/components/directivas/CondicionalCompositionComponent.vue'; // Reemplaza con la ruta de tu componente
 
 describe('MyComponent', () => {
     it('should initially hide the content', () => {

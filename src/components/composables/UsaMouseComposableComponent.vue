@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { useMouse } from '../composables/useMouse'
+import { useMouse } from '../../composables/useMouse.js'
 
 const { x, y } = useMouse()
 </script>

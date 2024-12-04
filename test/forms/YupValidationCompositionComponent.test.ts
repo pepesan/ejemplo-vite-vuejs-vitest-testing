@@ -2,7 +2,7 @@ import { describe, it, expect} from 'vitest';
 import { mount } from '@vue/test-utils';
 import { ref, reactive } from 'vue';
 import * as yup from 'yup';
-import YupValidationCompositionComponent from '../src/components/YupValidationCompositionComponent.vue';
+import YupValidationCompositionComponent from '../../src/components/forms/YupValidationCompositionComponent.vue';
 
 describe('LoginForm', () => {
     it('should display error messages for invalid input', async () => {

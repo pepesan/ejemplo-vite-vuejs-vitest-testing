@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
 import {describe, test, expect} from "vitest";
-import ModelCompositionComponent from "../src/components/ModelCompositionComponent.vue";
+import ModelCompositionComponent from "../../src/components/directivas/ModelCompositionComponent.vue";
 
 describe('MyComponent', () => {
     test('should render the correct message and initial count', async () => {

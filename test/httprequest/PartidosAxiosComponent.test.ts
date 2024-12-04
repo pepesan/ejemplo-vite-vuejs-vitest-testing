@@ -1,5 +1,5 @@
 import {mount, shallowMount} from '@vue/test-utils';
-import PartidosAxiosComponent from "../src/components/PartidosAxiosComponent.vue";
+import PartidosAxiosComponent from "../../src/components/httprequest/PartidosAxiosComponent.vue";
 import {expect, vi } from "vitest";
 import axios from 'axios';
 import flushPromises from 'flush-promises'; // Importa flushPromises

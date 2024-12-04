@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import { useDouble } from '../composables/useDouble'
+import { useDouble } from '../../composables/useDouble.js'
 
 const { number, double } = useDouble(5) // Puedes pasar un valor inicial si lo deseas
 </script>

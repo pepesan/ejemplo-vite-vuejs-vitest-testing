@@ -1,6 +1,6 @@
 import { mount } from '@vue/test-utils';
-import UsoDirectivaCustomComponent from '../src/components/UsaDirectivaCustomComponent.vue';
-import vYellowBackground from '../src/directives/v-yellow-background';
+import UsoDirectivaCustomComponent from '../../src/components/directivas/UsaDirectivaCustomComponent.vue';
+import vYellowBackground from '../../src/directives/v-yellow-background';
 
 describe('MyComponent.vue', () => {
     it('aplica la directiva v-yellow-background correctamente', () => {

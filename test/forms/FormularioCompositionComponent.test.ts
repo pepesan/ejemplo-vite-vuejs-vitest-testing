@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import FormularioCompositionComponent from '../src/components/FormularioCompositionComponent.vue'; // Ajusta la ruta a tu componente
+import FormularioCompositionComponent from '../../src/components/forms/FormularioCompositionComponent.vue'; // Ajusta la ruta a tu componente
 import { describe, it, expect, vi } from 'vitest';
 
 describe('LoginForm', () => {

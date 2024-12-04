@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import PropsCompositionComponent from '../src/components/PropsCompositionComponent.vue';
+import PropsCompositionComponent from '../../src/components/props/PropsCompositionComponent.vue';
 import {describe, test, expect} from "vitest";
 
 describe('MiComponente', () => {

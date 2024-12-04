@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import ListadoCompositionComponent from '../src/components/ListadoCompositionComponent.vue';
+import ListadoCompositionComponent from '../../src/components/directivas/ListadoCompositionComponent.vue';
 
 describe('ItemList', () => {
     it('should render a list of items based on the prop', () => {
