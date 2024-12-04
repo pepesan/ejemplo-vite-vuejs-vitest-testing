@@ -1,7 +1,7 @@
 <template>
   <div>
-    <input type="text" v-model="inputValue" />
-    <p>El valor actual es: {{ inputValue }}</p>
+    <input id="campo" type="text" v-model="inputValue" />
+    <p id="mensaje">El valor actual es: {{ inputValue }}</p>
     <button id="inc" @click="show">Mostrar</button>
   </div>
 </template>

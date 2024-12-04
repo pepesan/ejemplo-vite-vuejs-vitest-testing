@@ -6,10 +6,10 @@ describe('MyComponent', () => {
     test('should render the correct message and initial count', async () => {
         const wrapper = mount(ModelCompositionComponent);
 
-        const input = wrapper.find('input');
+        const input = wrapper.find('input#campo');
 
         await input.setValue('Hola, mundo!');
 
-        expect(wrapper.find('p').text()).toBe('El valor actual es: Hola, mundo!');
+        expect(wrapper.find('p#mensaje').text()).toBe('El valor actual es: Hola, mundo!');
     });
 });
