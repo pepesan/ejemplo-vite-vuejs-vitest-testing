@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-import PostAxiosFormComponent from "./components/httprequest/PostAxiosFormComponent.vue";
+import UsaDirectivaCustomComponent from "./components/directivas/UsaDirectivaCustomComponent.vue";
 </script>
 
 <template>
-  <PostAxiosFormComponent/>
+  <UsaDirectivaCustomComponent/>
 </template>
 
 <style scoped>
