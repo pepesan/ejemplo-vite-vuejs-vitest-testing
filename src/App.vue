@@ -1,12 +1,9 @@
 <script setup lang="ts">
-
-import UseCounterComposableComponent from "./components/composables/UseCounterComposableComponent.vue";
-import UsaDoubleComposableComponent from "./components/composables/UsaDoubleComposableComponent.vue";
-import UsaMouseComposableComponent from "./components/composables/UsaMouseComposableComponent.vue";
+import UsaMixinComponent from "./components/mixins/UsaMixinComponent.vue";
 </script>
 
 <template>
-  <UsaMouseComposableComponent/>
+  <UsaMixinComponent/>
 </template>
 
 <style scoped>
