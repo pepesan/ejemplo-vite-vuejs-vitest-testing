@@ -1,10 +1,10 @@
 <script setup lang="ts">
 
-import PartidosAxiosComponent from "./components/httprequest/PartidosAxiosComponent.vue";
+import PostAxiosFormComponent from "./components/httprequest/PostAxiosFormComponent.vue";
 </script>
 
 <template>
-  <PartidosAxiosComponent/>
+  <PostAxiosFormComponent/>
 </template>
 
 <style scoped>

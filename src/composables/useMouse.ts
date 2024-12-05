@@ -6,12 +6,20 @@ export function useMouse() {
     const y = ref(0)
 
     function update(event) {
+        console.log('Mousemove event detected:', event.pageX, event.pageY)
         x.value = event.pageX
         y.value = event.pageY
     }
 
-    onMounted(() => window.addEventListener('mousemove', update))
-    onUnmounted(() => window.removeEventListener('mousemove', update))
+    onMounted(() => {
+        // console.log('Adding mousemove event listener')
+        window.addEventListener('mousemove', update)
+    })
+    onUnmounted(() => {
+        // console.log('Removing mousemove event listener')
+        window.removeEventListener('mousemove', update)
+    })
 
     return { x, y }
 }
+

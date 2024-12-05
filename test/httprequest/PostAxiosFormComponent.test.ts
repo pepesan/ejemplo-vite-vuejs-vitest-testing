@@ -34,7 +34,7 @@ describe('FormularioComponent', () => {
 
     it('debe enviar el formulario correctamente y mostrar el mensaje de éxito', async () => {
         const mockResponse = { data: { id: 101, title: 'Título de prueba', body: 'Contenido de prueba' } };
-        (axios.post as jest.Mock).mockResolvedValueOnce(mockResponse);
+        vi.spyOn(axios, 'post').mockResolvedValueOnce(mockResponse);
 
         await wrapper.find('input#title').setValue('Título de prueba');
         await wrapper.find('textarea#body').setValue('Contenido de prueba');
@@ -56,7 +56,7 @@ describe('FormularioComponent', () => {
 
     it('debe manejar errores al enviar el formulario y mostrar el mensaje de error', async () => {
         const mockError = new Error('Error de red');
-        (axios.post as jest.Mock).mockRejectedValueOnce(mockError);
+        vi.spyOn(axios, 'post').mockRejectedValueOnce(mockError);
 
         await wrapper.find('input#title').setValue('Título de prueba');
         await wrapper.find('textarea#body').setValue('Contenido de prueba');
