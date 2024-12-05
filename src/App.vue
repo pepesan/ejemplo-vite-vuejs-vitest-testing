@@ -1,11 +1,10 @@
 <script setup lang="ts">
-import FormularioCompositionComponent from "./components/forms/FormularioCompositionComponent.vue";
-import YupValidationCompositionComponent from "./components/forms/YupValidationCompositionComponent.vue";
-import YupValidationV2CompositionComponent from "./components/forms/YupValidationLoginCompositionComponent.vue";
+
+import PostAxiosFormComponent from "./components/httprequest/PostAxiosFormComponent.vue";
 </script>
 
 <template>
-  <YupValidationV2CompositionComponent/>
+  <PostAxiosFormComponent/>
 </template>
 
 <style scoped>

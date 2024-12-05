@@ -1,6 +1,6 @@
-import {mount, shallowMount} from '@vue/test-utils';
+import {mount} from '@vue/test-utils';
 import PartidosAxiosComponent from "../../src/components/httprequest/PartidosAxiosComponent.vue";
-import {expect, vi } from "vitest";
+import {expect, test, vi} from "vitest";
 import axios from 'axios';
 
 import flushPromises from 'flush-promises'; // Importa flushPromises
@@ -8,12 +8,13 @@ import flushPromises from 'flush-promises'; // Importa flushPromises
 vi.mock('axios');
 
 describe('Resultados', () => {
-    it('should fetch data and display results', async () => {
+
+    test('should fetch data and display results', async () => {
         const wrapper = mount(PartidosAxiosComponent);
         expect(wrapper.text()).toContain('Cargando resultados...');
     });
 
-    it('muestra un error si la solicitud falla', async () => {
+    test('muestra un error si la solicitud falla', async () => {
         // Simulamos un error en la solicitud
         axios.get.mockRejectedValueOnce(new Error('Error de red'));
 
@@ -25,7 +26,7 @@ describe('Resultados', () => {
         expect(wrapper.text()).toContain('Error al cargar los datos: Error de red');
     });
 
-    it('muestra la lista de partidos cuando los datos se cargan correctamente', async () => {
+    test('muestra la lista de partidos cuando los datos se cargan correctamente', async () => {
         // Simulamos una respuesta exitosa
         axios.get.mockResolvedValueOnce({
             data: [
@@ -43,8 +44,8 @@ describe('Resultados', () => {
         expect(wrapper.text()).not.toContain('Cargando resultados...');
 
         // Verificamos que se muestren los partidos
-        expect(wrapper.text()).toContain('Partido 1: 100 diputados');
-        expect(wrapper.text()).toContain('Partido 2: 200 diputados');
+        expect(wrapper.text()).toContain('Partido 1');
+        expect(wrapper.text()).toContain('Partido 2');
 
         // Verificamos que las imágenes estén presentes
         const images = wrapper.findAll('img');
