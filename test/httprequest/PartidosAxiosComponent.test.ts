@@ -4,10 +4,14 @@ import {expect, test, vi} from "vitest";
 import axios from 'axios';
 
 import flushPromises from 'flush-promises'; // Importa flushPromises
-// Mock de axios
-vi.mock('axios');
+
 
 describe('Resultados', () => {
+
+    // Restaura los mocks de axios después de cada prueba
+    afterEach(() => {
+        vi.restoreAllMocks();
+    });
 
     test('should fetch data and display results', async () => {
         const wrapper = mount(PartidosAxiosComponent);
@@ -16,7 +20,8 @@ describe('Resultados', () => {
 
     test('muestra un error si la solicitud falla', async () => {
         // Simulamos un error en la solicitud
-        axios.get.mockRejectedValueOnce(new Error('Error de red'));
+        vi.spyOn(axios, 'get').mockRejectedValueOnce(new Error('Error de red'));
+
 
         const wrapper = mount(PartidosAxiosComponent);
 
@@ -28,7 +33,7 @@ describe('Resultados', () => {
 
     test('muestra la lista de partidos cuando los datos se cargan correctamente', async () => {
         // Simulamos una respuesta exitosa
-        axios.get.mockResolvedValueOnce({
+        vi.spyOn(axios, 'get').mockResolvedValueOnce({
             data: [
                 { nombre: 'Partido 1', dipu: 100, imagen: 'partido1.png' },
                 { nombre: 'Partido 2', dipu: 200, imagen: 'partido2.png' },
