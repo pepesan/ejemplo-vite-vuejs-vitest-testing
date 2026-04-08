@@ -1,6 +1,6 @@
 // tests/unit/LoginForm.spec.js
-import { mount } from '@vue/test-utils';
-import { describe, test, expect, beforeEach, afterEach, vi, af} from 'vitest';
+import {mount, VueWrapper} from '@vue/test-utils';
+import { describe, test, expect, beforeEach, afterEach, vi} from 'vitest';
 import YupValidationLoginCompositionComponent from '../../src/components/forms/YupValidationLoginCompositionComponent.vue';
 
 describe('YupValidationLoginCompositionComponent.vue', () => {
