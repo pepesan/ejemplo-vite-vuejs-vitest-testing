@@ -1,5 +1,5 @@
 export default {
-    mounted(el) {
+    mounted(el: HTMLElement) {
         el.style.backgroundColor = 'red';
     }
 };

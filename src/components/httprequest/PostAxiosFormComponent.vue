@@ -43,7 +43,7 @@ export default defineComponent({
 
     const successMessage = ref('');
     const submitError = ref('');
-    const responseData = ref(null);
+    const responseData = ref<Record<string, unknown> | null>(null);
 
     const schema = yup.object().shape({
       title: yup.string().required('El título es obligatorio'),
@@ -52,32 +52,38 @@ export default defineComponent({
 
     const onSubmit = async () => {
       try {
-        // Validar el formulario
         await schema.validate(formData, { abortEarly: false });
-        // Limpiar errores previos
+
         errors.title = '';
         errors.body = '';
         successMessage.value = '';
         submitError.value = '';
         responseData.value = null;
 
-        // Enviar petición POST
-        const response = await axios.post('https://jsonplaceholder.typicode.com/posts', formData);
+        const response = await axios.post(
+            'https://jsonplaceholder.typicode.com/posts',
+            formData
+        );
+
         console.log('Formulario enviado exitosamente', response.data);
 
-        // Mostrar mensaje de éxito y datos de respuesta
         successMessage.value = '¡Formulario enviado exitosamente!';
         responseData.value = response.data;
       } catch (err) {
         if (err instanceof yup.ValidationError) {
-          // Manejar errores de validación
+          errors.title = '';
+          errors.body = '';
+
           err.inner.forEach((validationError) => {
-            errors[validationError.path] = validationError.message;
+            const path = validationError.path;
+            if (path === 'title' || path === 'body') {
+              errors[path] = validationError.message;
+            }
           });
         } else {
-          // Manejar otros errores
           console.error('Error al enviar el formulario', err);
-          submitError.value = 'Error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.';
+          submitError.value =
+              'Error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.';
         }
       }
     };

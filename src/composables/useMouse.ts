@@ -5,7 +5,7 @@ export function useMouse() {
     const x = ref(0)
     const y = ref(0)
 
-    function update(event) {
+    function update(event: MouseEvent) {
         console.log('Mousemove event detected:', event.pageX, event.pageY)
         x.value = event.pageX
         y.value = event.pageY

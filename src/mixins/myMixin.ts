@@ -5,7 +5,7 @@ export const myMixin = {
         };
     },
     methods: {
-        saludar() {
+        saludar(this: { message: string }) {
             console.log(this.message);
         }
     }
